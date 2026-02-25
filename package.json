@@ -1,6 +1,6 @@
 {
   "name": "merkle-tree-poseidon-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "ardial@hara.ag",
   "description": "TypeScript SDK for Merkle Tree and Poseidon Selective Disclosure",
   "main": "dist/index.js",
