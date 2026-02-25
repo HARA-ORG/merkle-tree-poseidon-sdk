@@ -1,0 +1,22 @@
+{
+  "name": "merkle-tree-poseidon-sdk",
+  "version": "1.0.0",
+  "author": "ardial@hara.ag",
+  "description": "TypeScript SDK for Merkle Tree and Poseidon Selective Disclosure",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node -T tests/sdk.test.ts"
+  },
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "merkletreejs": "^0.3.11",
+    "snarkjs": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

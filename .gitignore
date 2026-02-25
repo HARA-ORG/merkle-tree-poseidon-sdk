@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Compilation
+dist/
+*.tsbuildinfo
+
+# ZK Artifacts (Simulation and Build)
+build_zk/
+proof.json
+public.json
+error.log
+output.log
+
+# Environment
+.env
+.DS_Store
+.vscode/
