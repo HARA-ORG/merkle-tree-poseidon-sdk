@@ -7,7 +7,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "ts-node -T tests/sdk.test.ts"
+    "test": "ts-node -T tests/sdk.test.ts",
+    "prepublishOnly": "npm test && npm run build"
   },
   "dependencies": {
     "circomlibjs": "^0.1.7",
