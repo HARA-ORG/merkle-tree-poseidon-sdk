@@ -82,6 +82,20 @@ export class ZkIdentitySDK {
     }
 
     /**
+     * Generates a raw Merkle proof for a specific field (by label).
+     */
+    async generateMerkleProof(label: string): Promise<{ pathElements: string[], pathIndices: number[] }> {
+        const index = this.fields.findIndex(f => f.label === label);
+        if (index === -1) throw new Error(`Field with label "${label}" not found`);
+
+        const { pathElements, pathIndices } = this.tree.generateProof(index);
+        return {
+            pathElements: pathElements.map(x => x.toString()),
+            pathIndices
+        };
+    }
+
+    /**
      * Generates the input for a ZK proof for a specific field (by label).
      */
     async generateProofInput(params: {

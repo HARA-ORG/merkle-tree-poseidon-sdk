@@ -7,7 +7,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "ts-node -T tests/sdk.test.ts",
+    "test": "npm run test:sdk && npm run test:tree",
+    "test:sdk": "ts-node -T tests/sdk.test.ts",
+    "test:tree": "ts-node -T tests/tree.test.ts",
     "prepublishOnly": "npm test && npm run build"
   },
   "dependencies": {

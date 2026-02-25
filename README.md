@@ -68,6 +68,13 @@ const proofInput = await sdk.generateProofInput({
   publicCommitment: BigInt("0x..."),
   threshold: 700n,
 });
+
+// 4. Get the Merkle Root
+const root = sdk.root;
+
+// 5. Generate raw Merkle Proof
+const { pathElements, pathIndices } =
+  await sdk.generateMerkleProof("credit_score");
 ```
 
 ## License
