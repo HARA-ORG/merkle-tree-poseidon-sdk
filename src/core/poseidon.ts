@@ -1,6 +1,5 @@
 import { buildPoseidon } from "circomlibjs";
-
-export type FieldElement = bigint;
+import { FieldElement } from "./fields";
 
 class PoseidonHasher {
     private poseidon: any = null;

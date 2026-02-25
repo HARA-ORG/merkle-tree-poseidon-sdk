@@ -1,4 +1,5 @@
-import { poseidonHasher, FieldElement } from "./poseidon";
+import { poseidonHasher } from "./poseidon";
+import { FieldElement } from "./fields";
 
 const TREE_DEPTH = 8;
 const TREE_SIZE = 2 ** TREE_DEPTH; // 256
