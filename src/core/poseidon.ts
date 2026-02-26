@@ -1,3 +1,4 @@
+// @ts-ignore
 import { buildPoseidon } from "circomlibjs";
 import { FieldElement } from "./fields";
 
